@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     axios.get("/api/python").then((res) => setData(res.data));
 
-    axios.get("/api/test").then((res) => setData2(res.data));
+    axios.get("/api/test/route").then((res) => setData2(res.data));
 
     console.log(data);
   }, []);
