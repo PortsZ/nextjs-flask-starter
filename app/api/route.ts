@@ -1,7 +1,7 @@
 import axios from "axios";	
 
 export async function GET() {
-   // const res = await axios.get("api/api/python")
-const res = {data:"test"} 
+   const res = await axios.get("api/api/python")
+// const res = {data:"test"} 
    return new Response(res.data)
 }
