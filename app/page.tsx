@@ -6,7 +6,7 @@ export default function Home() {
   const [data, setData] = useState<any>(<></>);
 
   useEffect(() => {
-    const res = axios.get("http://127.0.0.1:5328/api/python")
+    const res = axios.get("/api/python")
       .then((res) => setData(res.data))
 
       console.log(data)
